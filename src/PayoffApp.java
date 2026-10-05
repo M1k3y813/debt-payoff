@@ -4,11 +4,17 @@ public class PayoffApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+// make an empty array list to hold apr
+
+        double[] aprs = new double[5];
+
         while(scan.hasNextLine()) {
             String name = scan.nextLine();
 
             double apr = scan.nextDouble();
             double balance = scan.nextDouble();
+
+// add apr to arrayList
 
             // Consume \n after balance input 
             if(scan.hasNextLine()) scan.nextLine();
@@ -19,3 +25,6 @@ public class PayoffApp {
         }
     }
 }
+
+//sort arrayList
+//print arrayList
